@@ -1,40 +1,26 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
-import title from "../assets/sj1.png"
+import title from "../assets/sj1.png";
 
 function Navbar() {
-
   const [nav, setNav] = useState(false);
 
   const links = [
-    {
-      id: 1,
-      link: "home",
-    },
-    {
-      id: 2,
-      link: "about",
-    },
-    {
-      id: 3,
-      link: "project",
-    },
-    {
-      id: 4,
-      link: "skills",
-    },
-    {
-      id: 5,
-      link: "contact",
-    },
+    { id: 1, link: "home" },
+    { id: 2, link: "about" },
+    { id: 3, link: "project" },
+    { id: 4, link: "skills" },
+    { id: 5, link: "contact" },
   ];
 
   return (
     <div>
       <div className="flex justify-between items-center w-full h-24 pr-20 text-white bg-[#222] fixed nav">
         <div className='pl-20 pt-6'>
-          <img src={title} alt='name' className='w-24 h-auto' />
+          <Link to="home" smooth duration={500}>
+            <img src={title} alt='name' className='w-24 h-auto cursor-pointer' />
+          </Link>
         </div>
         <ul className="hidden md:flex">
           {links.map(({ id, link }) => (
@@ -77,7 +63,7 @@ function Navbar() {
         )}
       </div>
     </div>
-  )
+  );
 }
 
 export default Navbar;

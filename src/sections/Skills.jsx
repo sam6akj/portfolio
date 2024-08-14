@@ -8,7 +8,7 @@ const skillGroups = [
 
 const Skills = ({ skillGroups }) => {
   return (
-    <div name="skills" className="bg-[#222] pb-24">
+    <div name="skills" className="bg-[#222] pt-56 pb-24">
       <h2 className="text-5xl font-bold text-center text-gray-400 mb-12">MY SKILLS</h2>
       <div className="flex flex-col items-center text-white">
         {skillGroups.map((group, index) => (

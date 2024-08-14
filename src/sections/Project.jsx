@@ -2,6 +2,7 @@ import React from 'react';
 import blockcahin_app from '../assets/project.png';
 import employeeChurn from '../assets/employee-churn.png'
 import dashboard from '../assets/dashboard.png'
+import portfolio from '../assets/portfolio.png'
 
 function Project() {
   const projects = [
@@ -24,6 +25,14 @@ function Project() {
     },
     {
       id: 3,
+      src: portfolio,
+      link: '',
+      repo: 'https://github.com/sam6akj/portfolio',
+      buttonType: 'GitHub',
+      about: 'Discover how my innovative web development and data insights create unique, functional, and visually captivating solutions'
+    },
+    {
+      id: 3,
       src: blockcahin_app,
       link: 'https://aethereo.netlify.app/',
       repo: 'https://github.com/rahulkarda/Wave-Portal',
@@ -34,7 +43,7 @@ function Project() {
   ];
 
   return (
-    <div name="project" className="bg-[#222] w-full text-white md:h-screen portfolio">
+    <div name="project" className="bg-[#222] w-full text-white md:h-screen portfolio pt-44">
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-14 flex justify-center">
           <p className="text-5xl font-bold inline text-gray-400">My Projects</p>
