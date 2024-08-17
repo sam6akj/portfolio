@@ -15,7 +15,7 @@ const Contact = () => {
       <div className="flex flex-col justify-center items-center max-w-screen-lg mx-auto h-full">
         <div className="pb-8">
           <p className="text-5xl font-extrabold text-gray-400">
-            CONTACT ME
+            Contact Me
           </p>
         </div>
 
@@ -32,21 +32,22 @@ const Contact = () => {
               name="name"
               placeholder="Enter your name"
               required
-              className="p-3 bg-transparent border-2 rounded-[18px] text-white focus:outline-none placeholder:text-white placeholder:text-xl"
+              className="p-3 bg-transparent border rounded-[16px] text-white focus:outline-none placeholder:text-gray-400 placeholder:text-lg"
             />
+
             <input
               type="email"
               name="email"
               placeholder="Enter your email"
               required
-              className="my-8 p-3 bg-transparent border-2 rounded-[18px] text-white focus:outline-none placeholder:text-white placeholder:text-xl"
+              className="my-8 p-3 bg-transparent border rounded-[18px] text-white focus:outline-none placeholder:text-gray-400 placeholder:text-lg"
             />
             <textarea
               name="message"
               placeholder="Enter your message"
               rows="10"
               required
-              className="p-3 bg-transparent border-2 rounded-[18px] text-white focus:outline-none placeholder:text-white placeholder:text-xl"
+              className="p-3 bg-transparent border rounded-[18px] text-white focus:outline-none placeholder:text-gray-400 placeholder:text-lg"
             ></textarea>
 
             <button
@@ -55,6 +56,8 @@ const Contact = () => {
             >
               Submit
             </button>
+
+
           </form>
         </div>
       </div>

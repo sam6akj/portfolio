@@ -25,7 +25,7 @@ const About = () => {
           I am constantly seeking new challenges and opportunities to expand my skill set, ensuring I deliver cutting-edge solutions that exceed client expectations.
         </p>
         <br></br>
-        <p className="text-3xl font-semibold underline decoration-2 decoration-gray-500 text-center pt-8">Let's bring your web vision to life!</p>
+        <p className="text-2xl font-bold underline decoration-2 decoration-gray-500 text-center pt-8">Let's bring your web vision to life!</p>
       </div>
     </div>
   );
