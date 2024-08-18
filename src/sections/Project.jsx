@@ -41,13 +41,13 @@ function Project() {
   ];
 
   return (
-    <div name="project" className="bg-[#222] w-full text-white md:h-screen portfolio pt-56">
-      <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
+    <div name="project" className="bg-[#222] w-full text-white md:h-screen portfolio pt-32">
+      <div className="max-w-screen-md p-4 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-14 flex justify-center">
           <p className="text-5xl font-bold inline text-gray-400">My Projects</p>
         </div>
         
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
+        <div className="grid sm:grid-cols-2 md:grid-cols-2 gap-8 px-12 sm:px-0">
           {projects.map(({ id, src, link, repo, about, buttonType }) => (
             <div key={id} className="relative rounded-lg overflow-hidden duration-200 hover:scale-105">
               <img
@@ -56,7 +56,7 @@ function Project() {
                 className="rounded-md w-full h-auto"
               />
               <div className="absolute inset-0 flex flex-col justify-start bg-black bg-opacity-75 opacity-0 hover:opacity-100 transition-opacity duration-300">
-                <p className="text-gray-400 px-4 pt-4">{about}</p>
+                <p className="text-gray-400 font-medium px-4 pt-4">{about}</p>
               </div>
               <div className="flex items-center justify-center mt-4">
                 {buttonType === 'Demo & GitHub' && (
